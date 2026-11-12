@@ -1,0 +1,695 @@
+CLAUDE.md
+  s_f223ddab317e08::t_fb7befe26106ea 1-215
+LICENSE
+  s_f223ddab317e08::t_74df92f79b7d31 1-21
+README.md
+  s_f223ddab317e08::t_7e18aa8c8ca77a 1-345
+docs/architecture.md
+  s_f223ddab317e08::t_243283350dd8f0 1-217
+docs/assets/banner.svg
+  s_f223ddab317e08::t_280d55aa7faf73 1-95
+docs/audit/2026-10-01-platform-audit.md
+  s_f223ddab317e08::t_3dbf1a8ab824c2 1-2361
+docs/experiments/2026-10-month1-preregistration.md
+  s_f223ddab317e08::t_27c89289111436 1-145
+docs/plan/2026-10-01-platform-v2-plan.md
+  s_f223ddab317e08::t_f03048a8f08775 1-787
+docs/plan/PROGRESS.md
+  s_f223ddab317e08::t_19ef28ff9476ef 1-290
+docs/plan/decision-model-benchmark.md
+  s_f223ddab317e08::t_37b2cda5210ca8 1-59
+docs/reference/api.md
+  s_f223ddab317e08::t_b9633d54735e25 1-56
+docs/reference/events.md
+  s_f223ddab317e08::t_da07b078f81b0c 1-626
+docs/reference/packages.md
+  s_f223ddab317e08::t_63869e819df383 1-411
+docs/reference/risk.md
+  s_f223ddab317e08::t_33e542bf8637ec 1-96
+docs/reference/scripts.md
+  s_f223ddab317e08::t_3082b76614b311 1-26
+docs/reference/settings.md
+  s_f223ddab317e08::t_8ad80ad3a5f8e3 1-63
+docs/runbooks/daily-ops.md
+  s_f223ddab317e08::t_7f45ba2d3b6b31 1-108
+docs/runbooks/incident.md
+  s_f223ddab317e08::t_14faa73e57955a 1-87
+docs/runbooks/kill-switch.md
+  s_f223ddab317e08::t_7e6bd936e4e958 1-100
+docs/runbooks/providers.md
+  s_f223ddab317e08::t_3faa59d0deb49c 1-109
+frontend/.gitignore
+  s_f223ddab317e08::t_072d5071d2efc8 1-13
+frontend/.npmrc
+  s_f223ddab317e08::t_4514a51040af9e 1
+frontend/README.md
+  s_f223ddab317e08::t_241e02776f2afa 1-55
+frontend/e2e/a11y.spec.ts
+  s_f223ddab317e08::t_6dd15974c186a0 1-33
+frontend/e2e/flows.spec.ts
+  s_f223ddab317e08::t_5a70d3add3c153 1-64
+frontend/e2e/global-setup.ts
+  s_f223ddab317e08::t_be0e53b1080324 1-59
+frontend/e2e/helpers.ts
+  s_f223ddab317e08::t_06fbabb6d6d29a 1-27
+frontend/e2e/inspector.spec.ts
+  s_f223ddab317e08::t_fce97f09fb9d46 1-40
+frontend/e2e/perf.spec.ts
+  s_f223ddab317e08::t_9dbdb4554bec57 1-50
+frontend/e2e/screens.spec.ts
+  s_f223ddab317e08::t_114b9197bd0edf 1-43
+frontend/eslint.config.js
+  s_f223ddab317e08::t_e9a3210844147a 1-18
+frontend/index.html
+  s_f223ddab317e08::t_7f4e6787022676 1-13
+frontend/openapi.json
+  s_f223ddab317e08::t_c8de78fb3d6da3 1-6097
+frontend/package-lock.json
+  s_f223ddab317e08::t_76b678e5e71abd 1-6129
+frontend/package.json
+  s_f223ddab317e08::t_e13e8bd07e1475 1-59
+frontend/playwright.config.ts
+  s_f223ddab317e08::t_c5bdf3784400c3 1-24
+frontend/postcss.config.js
+  s_f223ddab317e08::t_7982446cb458d8 1-6
+frontend/scripts/check-bundle.mjs
+  s_f223ddab317e08::t_986d4f0b864d1a 1-34
+frontend/src/api/client.test.ts
+  s_f223ddab317e08::t_61facfb11fc379 1-39
+frontend/src/api/client.ts
+  s_f223ddab317e08::t_6e3e8b184efb77 1-77
+frontend/src/api/queries.ts
+  s_f223ddab317e08::t_474cbbf1eb9e80 1-93
+frontend/src/api/types.gen.ts
+  s_f223ddab317e08::t_cb4b464b547477 1-3770
+frontend/src/app/App.tsx
+  s_f223ddab317e08::t_17e7ee06dc7805 1-105
+frontend/src/app/routes.tsx
+  s_f223ddab317e08::t_a6f94ffbb1c8ee 1-33
+frontend/src/design-rules.test.ts
+  s_f223ddab317e08::t_1873b7effccbf5 1-39
+frontend/src/index.css
+  s_f223ddab317e08::t_f316d6db9ec4a5 1-79
+frontend/src/lib/auth.ts
+  s_f223ddab317e08::t_ff16a3fb36feed 1-25
+frontend/src/lib/cx.ts
+  s_f223ddab317e08::t_a9900d394c860b 1-4
+frontend/src/lib/format.test.ts
+  s_f223ddab317e08::t_f6fd9d07793636 1-79
+frontend/src/lib/format.ts
+  s_f223ddab317e08::t_066df9daebfd4a 1-175
+frontend/src/lib/settings.ts
+  s_f223ddab317e08::t_3e5b2272a9bd87 1-24
+frontend/src/lib/stream.test.ts
+  s_f223ddab317e08::t_0e786eccb9c6e0 1-66
+frontend/src/lib/stream.ts
+  s_f223ddab317e08::t_0577ee2e1d2bfe 1-200
+frontend/src/lib/ui.ts
+  s_f223ddab317e08::t_7675338269683c 1-16
+frontend/src/main.tsx
+  s_f223ddab317e08::t_d39d7d5bd6b4ce 1-48
+frontend/src/screens/AIDesk.tsx
+  s_f223ddab317e08::t_70e6e429a81458 1-224
+frontend/src/screens/Blotter.tsx
+  s_f223ddab317e08::t_b6bca9587ef1b4 1-162
+frontend/src/screens/CommandCenter.tsx
+  s_f223ddab317e08::t_a4128fe3171a17 1-327
+frontend/src/screens/DecisionInspector.tsx
+  s_f223ddab317e08::t_1cfa990fc8a603 1-448
+frontend/src/screens/Decisions.tsx
+  s_f223ddab317e08::t_627a71bdf385d5 1-81
+frontend/src/screens/Experiment.tsx
+  s_f223ddab317e08::t_4885f48fe5ccdc 1-153
+frontend/src/screens/Market.tsx
+  s_f223ddab317e08::t_065611de3ef7d2 1-116
+frontend/src/screens/RiskCenter.tsx
+  s_f223ddab317e08::t_b198a5d92350f0 1-192
+frontend/src/screens/System.tsx
+  s_f223ddab317e08::t_a04d65ddc34f9d 1-134
+frontend/src/screens/common.tsx
+  s_f223ddab317e08::t_f687c18cdc0142 1-158
+frontend/src/screens/lineage.ts
+  s_f223ddab317e08::t_d6925e33668f9e 1-142
+frontend/src/shell/Banners.tsx
+  s_f223ddab317e08::t_7a0b12b0221a3f 1-35
+frontend/src/shell/CommandPalette.tsx
+  s_f223ddab317e08::t_0e73d3133a530e 1-87
+frontend/src/shell/HaltDialog.tsx
+  s_f223ddab317e08::t_c11402bfbf761c 1-88
+frontend/src/shell/Nav.tsx
+  s_f223ddab317e08::t_326aaa4d4bd957 1-46
+frontend/src/shell/StatusBar.tsx
+  s_f223ddab317e08::t_2b85af1bae510c 1-67
+frontend/src/shell/TopBar.tsx
+  s_f223ddab317e08::t_7bbd811413998b 1-101
+frontend/src/shell/icons.tsx
+  s_f223ddab317e08::t_89309f219c3e35 1-20
+frontend/src/shell/shell.test.ts
+  s_f223ddab317e08::t_f7283307ab374a 1-37
+frontend/src/ui/Badge.tsx
+  s_f223ddab317e08::t_67dbf00716a3e6 1-69
+frontend/src/ui/Chart.tsx
+  s_f223ddab317e08::t_ef924f9d6b15bf 1-17
+frontend/src/ui/ChartImpl.tsx
+  s_f223ddab317e08::t_ea3dc356629914 1-150
+frontend/src/ui/DataTable.tsx
+  s_f223ddab317e08::t_b5b8aacfea02d5 1-241
+frontend/src/ui/Dialog.tsx
+  s_f223ddab317e08::t_0e50aad645d7ad 1-133
+frontend/src/ui/Meter.tsx
+  s_f223ddab317e08::t_d4b7bfa5b87a56 1-57
+frontend/src/ui/Num.tsx
+  s_f223ddab317e08::t_8a16674e3a8fe7 1-98
+frontend/src/ui/Panel.tsx
+  s_f223ddab317e08::t_96b50f67dd9647 1-77
+frontend/src/ui/Sparkline.tsx
+  s_f223ddab317e08::t_4134fcb2175a9f 1-31
+frontend/src/ui/Stat.tsx
+  s_f223ddab317e08::t_858f2b13db4ee1 1-24
+frontend/src/ui/Tabs.tsx
+  s_f223ddab317e08::t_57c42e8aa422f4 1-47
+frontend/src/ui/Timeline.tsx
+  s_f223ddab317e08::t_8a9acc823a795a 1-39
+frontend/src/ui/Toast.tsx
+  s_f223ddab317e08::t_3b371036ab64e4 1-69
+frontend/src/ui/components.test.tsx
+  s_f223ddab317e08::t_762ce1c9db5a82 1-135
+frontend/tailwind.config.ts
+  s_f223ddab317e08::t_31da686411448a 1-40
+frontend/tsconfig.json
+  s_f223ddab317e08::t_762ced433269ef 1-32
+frontend/tsconfig.node.json
+  s_f223ddab317e08::t_7927397355158e 1-16
+frontend/vite.config.ts
+  s_f223ddab317e08::t_82ce2b3418fc2a 1-29
+pyproject.toml
+  s_f223ddab317e08::t_fc9312d3773c1f 1-105
+scripts/bench_decision_models.py
+  s_f223ddab317e08::t_a8d72d23e6c1b0 1-187
+scripts/build_decision_labels.py
+  s_f223ddab317e08::t_f1ccb11476ad28 1-145
+scripts/build_demo_tape.py
+  s_f223ddab317e08::t_ae4d06756a9dd5 1-25
+scripts/calibrate_decision_models.py
+  s_f223ddab317e08::t_180e5fc4071d5d 1-111
+scripts/check_config.py
+  s_f223ddab317e08::t_237733c4c86a39 1-74
+scripts/ci/mypy_ratchet.py
+  s_f223ddab317e08::t_f78e1c86885983 1-52
+scripts/daily_report.py
+  s_f223ddab317e08::t_9dae4bf15e434c 1-88
+scripts/deadman_check.py
+  s_f223ddab317e08::t_a7466c15804644 1-47
+scripts/export_openapi.py
+  s_f223ddab317e08::t_fd6925ebb14054 1-49
+scripts/fetch_bhavcopy.py
+  s_f223ddab317e08::t_b2a6009a9732d8 1-95
+scripts/gen_docs.py
+  s_f223ddab317e08::t_b8d5535af096ca 1-377
+scripts/install_windows_task.ps1
+  s_f223ddab317e08::t_137dbbe26da4fd 1-161
+scripts/llm_check.py
+  s_f223ddab317e08::t_4c7c8d647f0f2d 1-102
+scripts/nightly_review.py
+  s_f223ddab317e08::t_3557da529e520a 1-53
+scripts/replay_day.py
+  s_f223ddab317e08::t_fa2846c04f2821 1-44
+scripts/run_live_trading.py
+  s_f223ddab317e08::t_ba5a102dbc82c0 1-154
+scripts/setup.py
+  s_f223ddab317e08::t_c50f3b334a1c21 1-69
+scripts/test_dhan_connection.py
+  s_f223ddab317e08::t_5b05c6393db8fc 1-120
+scripts/validate_strategy.py
+  s_f223ddab317e08::t_3f4d5208727217 1-174
+src/__init__.py
+  s_f223ddab317e08::t_59bf6b2978b2eb 1-9
+src/backtesting/__init__.py
+  s_f223ddab317e08::t_6f040049b9fd49 1-5
+src/backtesting/bars.py
+  s_f223ddab317e08::t_7ff3e8f4ea8f44 1-120
+src/backtesting/edge.py
+  s_f223ddab317e08::t_4070dc61eec66a 1-194
+src/backtesting/session.py
+  s_f223ddab317e08::t_58b49ca95d1a01 1-115
+src/brokers/__init__.py
+  s_f223ddab317e08::t_3a5df6b8c48862 1
+src/brokers/base.py
+  s_f223ddab317e08::t_b48701bb467fe0 1-275
+src/brokers/simulated/__init__.py
+  s_f223ddab317e08::t_6620e9ccc66333 1
+src/brokers/simulated/broker.py
+  s_f223ddab317e08::t_af1bff66f0a8a3 1-783
+src/brokers/simulated/costs.py
+  s_f223ddab317e08::t_acac4edb690074 1-166
+src/brokers/simulated/fill_model.py
+  s_f223ddab317e08::t_247783b4f1afc4 1-112
+src/config/__init__.py
+  s_f223ddab317e08::t_60190894c9e34d 1-5
+src/config/costs_nse.yaml
+  s_f223ddab317e08::t_a40a9061c40747 1-28
+src/config/errors.py
+  s_f223ddab317e08::t_6891a5370fbe64 1-5
+src/config/event_rules.yaml
+  s_f223ddab317e08::t_af576c4c683cf8 1-19
+src/config/experiment.yaml
+  s_f223ddab317e08::t_d0bf348c1ec1a4 1-19
+src/config/limits.py
+  s_f223ddab317e08::t_9f72cf61afe28f 1-146
+src/config/llm_pricing.yaml
+  s_f223ddab317e08::t_774148a541c4c8 1-23
+src/config/nse_calendar.json
+  s_f223ddab317e08::t_0eb6e1dc2a7cd2 1-57
+src/config/settings.py
+  s_f223ddab317e08::t_27e2ab15abf961 1-332
+src/dashboard/__init__.py
+  s_f223ddab317e08::t_f79e824d778783 1-5
+src/dashboard/cli.py
+  s_f223ddab317e08::t_6d306e7c200921 1-292
+src/decision/__init__.py
+  s_f223ddab317e08::t_3c1c2cc7e3fd1d 1
+src/decision/advisors/__init__.py
+  s_f223ddab317e08::t_645671503e827c 1
+src/decision/advisors/llm_veto.py
+  s_f223ddab317e08::t_6353afa50b76e2 1-121
+src/decision/advisors/typed_veto.py
+  s_f223ddab317e08::t_5d1a377db90a9c 1-202
+src/decision/engine.py
+  s_f223ddab317e08::t_5ab6bda774a04b 1-315
+src/decision_models/__init__.py
+  s_f223ddab317e08::t_db2a12ca5f309b 1
+src/decision_models/adapters.py
+  s_f223ddab317e08::t_f955a9628f35d8 1-180
+src/decision_models/base.py
+  s_f223ddab317e08::t_8f156ed8b26180 1-149
+src/decision_models/cache.py
+  s_f223ddab317e08::t_c6c1f90a16a360 1-86
+src/decision_models/calibration.py
+  s_f223ddab317e08::t_676b023e7930be 1-193
+src/decision_models/cascade.py
+  s_f223ddab317e08::t_c31b733cd8303a 1-203
+src/decision_models/labels.py
+  s_f223ddab317e08::t_a2f83846f9f4d8 1-292
+src/decision_models/setup.py
+  s_f223ddab317e08::t_cb1d5699089b33 1-50
+src/decision_models/tasks/__init__.py
+  s_f223ddab317e08::t_a72dca91a3997b 1
+src/decision_models/tasks/announcements.py
+  s_f223ddab317e08::t_36b41292824484 1-267
+src/domain/__init__.py
+  s_f223ddab317e08::t_821ccbb4021751 1
+src/domain/base.py
+  s_f223ddab317e08::t_31ef7f67815e12 1-58
+src/domain/calendar.py
+  s_f223ddab317e08::t_ed0e89cfa9bd1b 1-206
+src/domain/clock.py
+  s_f223ddab317e08::t_cf0105d9354d4d 1-109
+src/domain/events.py
+  s_f223ddab317e08::t_19d962b344e34f 1-796
+src/domain/ids.py
+  s_f223ddab317e08::t_8179d5c78cd659 1-46
+src/domain/sink.py
+  s_f223ddab317e08::t_1715fadf971ce3 1-44
+src/domain/types.py
+  s_f223ddab317e08::t_8c3bded9170382 1-694
+src/engine/__init__.py
+  s_f223ddab317e08::t_0ec8f5448e911b 1
+src/engine/demo.py
+  s_f223ddab317e08::t_9fa74166f1252c 1-155
+src/engine/lifecycle.py
+  s_f223ddab317e08::t_dc67fa0d413052 1-278
+src/engine/live.py
+  s_f223ddab317e08::t_c4cf75d46d63cd 1-329
+src/engine/market.py
+  s_f223ddab317e08::t_db9dbda89efdeb 1-172
+src/engine/replay.py
+  s_f223ddab317e08::t_60baa59eb5c41a 1-237
+src/engine/runner.py
+  s_f223ddab317e08::t_0f4fbc290ff303 1-541
+src/engine/tasks.py
+  s_f223ddab317e08::t_0264dcd1ad105d 1-137
+src/evaluation/__init__.py
+  s_f223ddab317e08::t_395b9027c29320 1
+src/evaluation/books.py
+  s_f223ddab317e08::t_bdfaa3dd5dac29 1-122
+src/evaluation/daily_report.py
+  s_f223ddab317e08::t_7f26c3c873e709 1-777
+src/evaluation/experiment.py
+  s_f223ddab317e08::t_6939aae37fe7cc 1-100
+src/evaluation/review.py
+  s_f223ddab317e08::t_07399289d34dcd 1-107
+src/evaluation/shadow_ledger.py
+  s_f223ddab317e08::t_c6faef9d242c6b 1-254
+src/features/__init__.py
+  s_f223ddab317e08::t_8c5592a0eb922b 1
+src/features/regime.py
+  s_f223ddab317e08::t_f717366962bfd9 1-181
+src/features/technical.py
+  s_f223ddab317e08::t_9a07ca2b36b765 1-187
+src/llm/__init__.py
+  s_f223ddab317e08::t_b17f9faa7d3e8a 1
+src/llm/clients/__init__.py
+  s_f223ddab317e08::t_cc4785f770dc97 1-47
+src/llm/clients/anthropic_native.py
+  s_f223ddab317e08::t_16fcee8d2eb15e 1-137
+src/llm/clients/base.py
+  s_f223ddab317e08::t_6cf5747bdbf546 1-79
+src/llm/clients/openai_compat.py
+  s_f223ddab317e08::t_7fa56d6ee13721 1-146
+src/llm/pricing.py
+  s_f223ddab317e08::t_bb10b35a18e054 1-85
+src/llm/prompts/__init__.py
+  s_f223ddab317e08::t_11d2a7bb4939ff 1
+src/llm/prompts/base.py
+  s_f223ddab317e08::t_d71a08fde3d6fe 1-61
+src/llm/prompts/evidence.py
+  s_f223ddab317e08::t_ec198763ad3a65 1-42
+src/llm/prompts/templates.py
+  s_f223ddab317e08::t_2009c420c76d3a 1-145
+src/llm/registry.py
+  s_f223ddab317e08::t_179d3bc59e5343 1-186
+src/llm/router.py
+  s_f223ddab317e08::t_c5bad3a1ac453f 1-407
+src/llm/setup.py
+  s_f223ddab317e08::t_aee510ef029b79 1-58
+src/llm/types.py
+  s_f223ddab317e08::t_c3e1d09ebd2472 1-73
+src/marketdata/__init__.py
+  s_f223ddab317e08::t_6f0da319f6a7bb 1
+src/marketdata/announcements.py
+  s_f223ddab317e08::t_1a4736a7968e2d 1-270
+src/marketdata/bhavcopy.py
+  s_f223ddab317e08::t_a9ff8b2364d474 1-269
+src/marketdata/history.py
+  s_f223ddab317e08::t_7c85de23947b79 1-359
+src/marketdata/replay.py
+  s_f223ddab317e08::t_e8ca55abd91cab 1-88
+src/marketdata/symbols.py
+  s_f223ddab317e08::t_229d0d09222633 1-10
+src/marketdata/validation.py
+  s_f223ddab317e08::t_e605e64e7cd6fc 1-123
+src/marketdata/yfinance_source.py
+  s_f223ddab317e08::t_a3ff1d5e323574 1-274
+src/notifications/__init__.py
+  s_f223ddab317e08::t_efe3bf7382d309 1-7
+src/notifications/telegram.py
+  s_f223ddab317e08::t_7bb778d795759e 1-340
+src/oms/__init__.py
+  s_f223ddab317e08::t_c8462e09668144 1
+src/oms/exit_manager.py
+  s_f223ddab317e08::t_9570e784daec97 1-523
+src/oms/oms.py
+  s_f223ddab317e08::t_29173438785625 1-576
+src/oms/position_book.py
+  s_f223ddab317e08::t_d1f36861df2df8 1-225
+src/ops/__init__.py
+  s_f223ddab317e08::t_4c0776654e4695 1
+src/ops/context.py
+  s_f223ddab317e08::t_1e8d31040c3cfd 1-38
+src/ops/deadman.py
+  s_f223ddab317e08::t_15de430e7b35bc 1-72
+src/ops/exit_codes.py
+  s_f223ddab317e08::t_bc5f7861bc2f3e 1-10
+src/ops/instance_lock.py
+  s_f223ddab317e08::t_382da332b31c29 1-42
+src/ops/logging_config.py
+  s_f223ddab317e08::t_ec4a629c4637b7 1-215
+src/ops/process.py
+  s_f223ddab317e08::t_480a00b7ff930b 1-175
+src/ops/version.py
+  s_f223ddab317e08::t_a40d1e2586594b 1-37
+src/reference/__init__.py
+  s_f223ddab317e08::t_5f56922167ce67 1
+src/reference/bands.py
+  s_f223ddab317e08::t_17f2a169eb09d4 1-69
+src/reference/download.py
+  s_f223ddab317e08::t_191de47ea732e3 1-105
+src/reference/instruments.py
+  s_f223ddab317e08::t_aa674aa2be619f 1-130
+src/reference/refresh.py
+  s_f223ddab317e08::t_431e531fc4c123 1-113
+src/reference/universe.py
+  s_f223ddab317e08::t_adcccb4ee509c2 1-91
+src/risk/__init__.py
+  s_f223ddab317e08::t_89fc7a5118abf1 1-9
+src/risk/checks/__init__.py
+  s_f223ddab317e08::t_752aa8b923dc74 1
+src/risk/checks/base.py
+  s_f223ddab317e08::t_3a76be34b325f3 1-92
+src/risk/checks/events.py
+  s_f223ddab317e08::t_6052825f7dbeb3 1-31
+src/risk/checks/order.py
+  s_f223ddab317e08::t_26ae4d1699b124 1-178
+src/risk/checks/portfolio.py
+  s_f223ddab317e08::t_30afaa17f10866 1-133
+src/risk/checks/strategy.py
+  s_f223ddab317e08::t_dab094528a45c6 1-82
+src/risk/checks/system.py
+  s_f223ddab317e08::t_d4ba057704c443 1-171
+src/risk/engine.py
+  s_f223ddab317e08::t_ede349bacd0cf9 1-203
+src/risk/events.py
+  s_f223ddab317e08::t_8490633a5f4c87 1-163
+src/risk/gate.py
+  s_f223ddab317e08::t_a94d5f4072fdf2 1-251
+src/risk/guards.py
+  s_f223ddab317e08::t_82b858ee91c560 1-52
+src/risk/kill_switch.py
+  s_f223ddab317e08::t_ecf7cdd8e06fe8 1-378
+src/risk/marks.py
+  s_f223ddab317e08::t_967e88f68c6b5c 1-34
+src/risk/monitor.py
+  s_f223ddab317e08::t_27bce157c136d7 1-115
+src/risk/snapshot.py
+  s_f223ddab317e08::t_3355e946e7baac 1-226
+src/risk/state.py
+  s_f223ddab317e08::t_0576c3f735f009 1-355
+src/risk/utilisation.py
+  s_f223ddab317e08::t_f2972a610ad4ae 1-65
+src/store/__init__.py
+  s_f223ddab317e08::t_29fed1e8fc9c9d 1
+src/store/event_store.py
+  s_f223ddab317e08::t_03c08790d0db48 1-266
+src/store/kv.py
+  s_f223ddab317e08::t_3141df51c32fa7 1-74
+src/store/migrations/0001_init.sql
+  s_f223ddab317e08::t_92fb1a810ea5d4 1-182
+src/store/migrations/0002_kv_state.sql
+  s_f223ddab317e08::t_3b9def771f40cc 1-11
+src/store/projections.py
+  s_f223ddab317e08::t_c6fbc37969da7b 1-429
+src/store/sink.py
+  s_f223ddab317e08::t_d8f7fc9630f832 1-23
+src/store/sqlite.py
+  s_f223ddab317e08::t_a0f38693bf5679 1-87
+src/store/tape.py
+  s_f223ddab317e08::t_a4b205fbeea824 1-204
+src/strategies/__init__.py
+  s_f223ddab317e08::t_8d0ce4c1ea8e3f 1-66
+src/strategies/base.py
+  s_f223ddab317e08::t_f9da9bab0a0813 1-122
+src/strategies/breakout.py
+  s_f223ddab317e08::t_7f0af9516dda38 1-29
+src/strategies/mean_reversion.py
+  s_f223ddab317e08::t_0985ff6e99493f 1-37
+src/strategies/momentum.py
+  s_f223ddab317e08::t_09fc2bc75e8630 1-37
+src/strategies/policy.py
+  s_f223ddab317e08::t_f10cd73f7e0bed 1-139
+src/strategies/trend_following.py
+  s_f223ddab317e08::t_073904b5e343f1 1-34
+src/utils/__init__.py
+  s_f223ddab317e08::t_9105c19c5c72f9 1
+src/utils/market_time.py
+  s_f223ddab317e08::t_47e25b8406f1d8 1-46
+src/web/__init__.py
+  s_f223ddab317e08::t_b5591a206cb9fe 1-11
+src/web/control.py
+  s_f223ddab317e08::t_8e77ae739a9a73 1-137
+src/web/models.py
+  s_f223ddab317e08::t_4847178456e71d 1-613
+src/web/queries.py
+  s_f223ddab317e08::t_b41f1ebf143ed4 1-1097
+src/web/run_manager.py
+  s_f223ddab317e08::t_a28596f3e7646c 1-235
+src/web/security.py
+  s_f223ddab317e08::t_c2f2b828ba95f0 1-131
+src/web/server.py
+  s_f223ddab317e08::t_a293ccd74dde71 1-539
+src/web/stream.py
+  s_f223ddab317e08::t_159761ca510578 1-378
+tests/__init__.py
+  s_f223ddab317e08::t_b22837097da860 1
+tests/backtest_fixture.py
+  s_f223ddab317e08::t_0014267f18f81e 1-52
+tests/bench/test_bench_execution.py
+  s_f223ddab317e08::t_9d170c60ecb382 1-77
+tests/conftest.py
+  s_f223ddab317e08::t_872de782f7d669 1-104
+tests/factories.py
+  s_f223ddab317e08::t_1bdd601c8b2fd0 1-461
+tests/fixtures/nse_announcements.xml
+  s_f223ddab317e08::t_2a2b19342b5c45 1-9
+tests/golden/backtest_fixture.jsonl
+  s_f223ddab317e08::t_e4568d33f702e0 1-621
+tests/golden/replay_day_fixture.jsonl
+  s_f223ddab317e08::t_181da617d0fc65 1-156
+tests/oms_harness.py
+  s_f223ddab317e08::t_eaae51baeb27a3 1-153
+tests/test_announcements.py
+  s_f223ddab317e08::t_cdbb5acb6865e6 1-145
+tests/test_api_contract.py
+  s_f223ddab317e08::t_7515be4244ea65 1-43
+tests/test_backtest_edge.py
+  s_f223ddab317e08::t_77b57a5217bb1f 1-134
+tests/test_backtest_session.py
+  s_f223ddab317e08::t_d1e7b41c9628d9 1-167
+tests/test_bhavcopy.py
+  s_f223ddab317e08::t_fa45635d984c23 1-122
+tests/test_books.py
+  s_f223ddab317e08::t_ccbd643c2214fe 1-224
+tests/test_brokers_base.py
+  s_f223ddab317e08::t_941295354d8bf4 1-64
+tests/test_brokers_costs.py
+  s_f223ddab317e08::t_48cc7daf3fe471 1-91
+tests/test_brokers_simulated.py
+  s_f223ddab317e08::t_126d88d771ab6a 1-432
+tests/test_calibration.py
+  s_f223ddab317e08::t_0fec052407cae4 1-246
+tests/test_ci_ratchet.py
+  s_f223ddab317e08::t_91f0a4eed1740f 1-50
+tests/test_daily_report.py
+  s_f223ddab317e08::t_6bf003c75428ff 1-209
+tests/test_dashboard.py
+  s_f223ddab317e08::t_db831b68349e5f 1-142
+tests/test_decision_cascade.py
+  s_f223ddab317e08::t_163a59e438988e 1-143
+tests/test_decision_engine.py
+  s_f223ddab317e08::t_4b4861e7888ada 1-199
+tests/test_decision_models.py
+  s_f223ddab317e08::t_a431426bec3194 1-166
+tests/test_demo_tape.py
+  s_f223ddab317e08::t_23b0b08305fed2 1-137
+tests/test_docs.py
+  s_f223ddab317e08::t_2793e2256bec20 1-58
+tests/test_domain_calendar.py
+  s_f223ddab317e08::t_2f050db34e0970 1-175
+tests/test_domain_clock.py
+  s_f223ddab317e08::t_b2109fa2d3a84b 1-115
+tests/test_domain_events.py
+  s_f223ddab317e08::t_146c1de0202245 1-93
+tests/test_domain_ids.py
+  s_f223ddab317e08::t_51c17872eaa18e 1-77
+tests/test_domain_types.py
+  s_f223ddab317e08::t_1fb9dcace41c56 1-364
+tests/test_engine_lifecycle.py
+  s_f223ddab317e08::t_e24d2fbe23f14a 1-196
+tests/test_engine_live.py
+  s_f223ddab317e08::t_3fb2072c3b2673 1-157
+tests/test_engine_market.py
+  s_f223ddab317e08::t_86777b99e1d6ba 1-164
+tests/test_engine_replay.py
+  s_f223ddab317e08::t_5d330b595a63d2 1-171
+tests/test_event_classifier.py
+  s_f223ddab317e08::t_f4293c2f086c2f 1-214
+tests/test_event_gate.py
+  s_f223ddab317e08::t_e1906721eb1f1b 1-190
+tests/test_hermetic.py
+  s_f223ddab317e08::t_46f1cba171e430 1-37
+tests/test_instance_lock.py
+  s_f223ddab317e08::t_01889aae1f4fa6 1-85
+tests/test_legacy_retirement.py
+  s_f223ddab317e08::t_9f865d15e33740 1-34
+tests/test_llm_clients.py
+  s_f223ddab317e08::t_3632006ca4683a 1-224
+tests/test_llm_pricing.py
+  s_f223ddab317e08::t_ab2069660e3e56 1-43
+tests/test_llm_prompts.py
+  s_f223ddab317e08::t_dcdabeeb11672b 1-192
+tests/test_llm_registry.py
+  s_f223ddab317e08::t_34db1be6b45640 1-108
+tests/test_llm_router.py
+  s_f223ddab317e08::t_d49767b26a7cb9 1-242
+tests/test_llm_setup.py
+  s_f223ddab317e08::t_a734cf2bc0d49f 1-122
+tests/test_marketdata_history.py
+  s_f223ddab317e08::t_6e159c5ed51dd6 1-181
+tests/test_marketdata_quotes.py
+  s_f223ddab317e08::t_b7f11706269877 1-263
+tests/test_notifications.py
+  s_f223ddab317e08::t_f316ebe191fab6 1-165
+tests/test_oms.py
+  s_f223ddab317e08::t_271607e8be114e 1-393
+tests/test_oms_exit_manager.py
+  s_f223ddab317e08::t_8f1e36a0275e20 1-212
+tests/test_ops_logging.py
+  s_f223ddab317e08::t_f25a4dcd76c53f 1-155
+tests/test_ops_process.py
+  s_f223ddab317e08::t_b13cf676540cfa 1-132
+tests/test_ops_scheduling.py
+  s_f223ddab317e08::t_a02c055ef1b0df 1-197
+tests/test_reference.py
+  s_f223ddab317e08::t_820cf4c754a1bc 1-224
+tests/test_regime.py
+  s_f223ddab317e08::t_281bdb2550a184 1-106
+tests/test_replay_golden.py
+  s_f223ddab317e08::t_1fc78a31fa8dcd 1-112
+tests/test_repo_hygiene.py
+  s_f223ddab317e08::t_66b072419fa9a3 1-53
+tests/test_review.py
+  s_f223ddab317e08::t_7c2ce116527ece 1-112
+tests/test_risk_engine.py
+  s_f223ddab317e08::t_6cdbe240bf6362 1-351
+tests/test_risk_gate.py
+  s_f223ddab317e08::t_430e9ae08ab9c9 1-185
+tests/test_risk_kill_switch.py
+  s_f223ddab317e08::t_1b12b3f1e191ac 1-283
+tests/test_risk_limits.py
+  s_f223ddab317e08::t_0e90082da53bc1 1-75
+tests/test_risk_state.py
+  s_f223ddab317e08::t_c915060fdc3e68 1-273
+tests/test_settings_runtime.py
+  s_f223ddab317e08::t_4fd5019628070d 1-101
+tests/test_shadow_ledger.py
+  s_f223ddab317e08::t_81f3af3e83520c 1-139
+tests/test_store.py
+  s_f223ddab317e08::t_629a66b1be4469 1-405
+tests/test_store_tape.py
+  s_f223ddab317e08::t_769612e33478e0 1-117
+tests/test_strategies.py
+  s_f223ddab317e08::t_994294e6bf9312 1-147
+tests/test_trade_policy.py
+  s_f223ddab317e08::t_008df25bbac726 1-110
+tests/test_typed_veto.py
+  s_f223ddab317e08::t_b7fd9ada7c3634 1-170
+tests/test_web.py
+  s_f223ddab317e08::t_d145435cd6a785 1-72
+tests/test_web_api.py
+  s_f223ddab317e08::t_ac4eb6bb07846b 1-344
+tests/test_web_control.py
+  s_f223ddab317e08::t_27e891327fa328 1-239
+tests/test_web_security.py
+  s_f223ddab317e08::t_1aea43aad6834b 1-134
+tests/test_web_stream.py
+  s_f223ddab317e08::t_306c11dcaa1c07 1-238
+tests/web_helpers.py
+  s_f223ddab317e08::t_719da988744700 1-25
+uv.lock
+  s_f223ddab317e08::t_d0d33b62455b65 1-4069
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "7880819ff84543506ad48bc79567b6bc5577ac17",
+  "prompts": {},
+  "sessions": {
+    "s_f223ddab317e08": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "16b4f8d0-ee4e-4ba3-aba9-4d7469ba55dc",
+        "model": "unknown"
+      },
+      "human_author": "Pradeep Nishani <nishani.pradeep24@gmail.com>"
+    }
+  }
+}
