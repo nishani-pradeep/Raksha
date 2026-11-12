@@ -1,0 +1,79 @@
+/* Self-hosted fonts (§6.3): IBM Plex Sans for the UI, IBM Plex Mono for ids, logs and code. */
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Plan §6.3 tokens (dark). Contrast on --bg-1: text-0 ~14:1, text-1 ~8.5:1, text-2 ~5:1. */
+:root {
+  --bg-0: #0b0d10;
+  --bg-1: #111418;
+  --bg-2: #171b21;
+  --border: #232931;
+  --border-strong: #2e3540;
+  --text-0: #e6e9ee;
+  --text-1: #a9b1bc;
+  --text-2: #7d8692;
+  --accent: #3b82f6;
+  --up: #2ebd85;
+  --down: #f0616d;
+  --warn: #e2a336;
+  --crit-bg: #5a1a1f;
+  --crit-fg: #ffd7da;
+  --overlay: rgba(11, 13, 16, 0.72);
+  --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-sm: 2px;
+  --radius: 4px;
+  color-scheme: dark;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-0);
+  color: var(--text-0);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Numbers: tabular figures, right-aligned by the formatter components. */
+.num {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* One visible focus ring, the accent (§6.1). */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+/* Motion (§6.2): at most 120 ms, opacity/translate only - and none if the user asks. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}

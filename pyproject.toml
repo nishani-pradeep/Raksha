@@ -1,0 +1,105 @@
+[project]
+name = "trading-agent"
+version = "0.1.0"
+description = "Paper-trading platform for NSE equities: a deterministic engine, typed decision models and LLM vetoes, recorded in an event store"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Trading Agent Team" }
+]
+keywords = ["trading", "nse", "paper-trading", "event-sourcing"]
+
+dependencies = [
+    # Market data, features and the backtest
+    "pandas>=2.0.0",
+    # <2.5: numpy 2.5 needs Python 3.12 and its stubs use 3.12 syntax; the target is 3.11.
+    "numpy>=1.24.0,<2.5",
+    "ta>=0.11.0",  # technical indicators
+    "yfinance>=0.2.0",  # free daily bars and quotes
+    "pyarrow>=25.0",  # Parquet quote/bar tape and the bhavcopy dataset
+
+    # Config, storage and the process
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "pyyaml>=6.0.3",  # YAML config (costs, pricing, event rules, experiment)
+    "filelock>=3.16",  # single-instance lock on the state directory
+    "rich>=13.0.0",  # CLI dashboard
+
+    # LLM providers and HTTP
+    "openai>=3.22",  # every OpenAI-compatible provider (OpenRouter, Groq, Ollama, ...)
+    "anthropic>=1.11",  # native Claude SDK
+    "httpx2>=2.13",  # async HTTP (Jev, RSS, NSE archives); the same client stack the SDKs use
+    "aiohttp>=3.9.0",  # Telegram alerts
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.5.0",
+    "mypy>=1.10.0",
+    "pytest-benchmark>=5.3",
+    "hypothesis>=6.168",
+    "types-PyYAML>=6.0",
+]
+
+# Web console (browser front end). Optional so the CLI-only install stays lean:
+#   uv sync --extra web   (or  pip install '.[web]')
+web = [
+    "fastapi>=0.140",
+    "uvicorn[standard]>=0.29.0",
+]
+
+# Local typed decision model (Laya, Convai Innovations, Apache-2.0). Pulls torch + onnxruntime,
+# so it stays out of the base install:  uv sync --extra decision-local
+decision-local = [
+    "laya[onnx]>=0.3.3",
+]
+
+# DhanHQ broker SDK, for scripts/test_dhan_connection.py and a future Dhan broker adapter. The
+# v2 engine trades on the simulated broker only:  uv sync --extra broker-dhan
+broker-dhan = [
+    "dhanhq>=2.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+# Markdown docs hold illustrative snippets (and the dated audit record); keep ruff on code.
+extend-exclude = ["*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+# E501 (line length) is owned by `ruff format` (line-length 100); it only flags string
+# literals the formatter intentionally won't split, so it's not enforced as a lint rule.
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Scripts insert the repo root onto sys.path before importing `src`, so imports follow code.
+"scripts/*" = ["E402"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+# Benchmarks are opt-in: `pytest -m bench` (plan §8: before closing M3, M6, M7 and M9).
+markers = ["bench: performance benchmarks (pytest-benchmark)"]
+addopts = "-m 'not bench'"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+
+# Third-party libraries without type stubs / py.typed markers. Silencing the missing-import
+# noise lets mypy focus on our own code.
+[[tool.mypy.overrides]]
+module = ["ta.*", "yfinance.*", "pandas.*", "pyarrow.*", "laya", "laya.*"]
+ignore_missing_imports = true
